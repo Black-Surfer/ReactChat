@@ -26,6 +26,5 @@ export default function presist() {
   );
   initStateWithPrevTab(store)
   let persistor = persistStore(store);
-  console.log(store, "new");
   return { store, persistor };
 }
