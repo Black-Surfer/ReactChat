@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react"
+import "./App.css"
+import { Sidebar } from "./containers/Sidebar"
+import { MessagesList } from "./containers/MessagesList"
+import { AddMessage } from "./containers/AddMessage"
+import  { NameModal }  from "./containers/NameModal"
 
-function App() {
+function App ()  {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="container" style={{width: 'auto'}}>
+      <NameModal />
+      <Sidebar />
+      <section id="main">
+        <MessagesList />
+        <AddMessage />
+      </section>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
