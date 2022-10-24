@@ -1,0 +1,46 @@
+.msg {
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 2%
+  }
+  
+  .msg.right, .msg > span {
+    float: right;
+    align-self: end;
+    text-align: end;
+  }
+
+  .half-width {
+    width: 35vw;
+  }
+
+  .bubble {
+    position: relative;
+    background: #ffffcc;
+    border: 1px solid #ffcc00;
+    max-width: 250px;
+    padding: 10px;
+    font-family: arial;
+    margin: 0 0 2% 2%;
+    font-size: 14px;
+    border-radius: 6px;
+    transform: rotate(180deg);
+    position:relative;
+    display:inline-block;
+    word-wrap:break-word;
+  }
+  
+  .bubble:after {
+    border-color: rgba(255, 255, 204, 0);
+    border-right-color: #ffffcc;
+    border-width: 15px;
+    margin-top: -15px;
+  }
+
+  .text-span {
+    position: relative;
+    display: inline-block;
+    max-width: 220px;
+    transform: rotate(-180deg);
+
+}
